@@ -1,0 +1,271 @@
+* {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+body{
+     background: #000FFF;
+     color: #ffdddd;
+     background-color: #070210;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%233a62da' fill-opacity='0.15'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");
+     font-size: 16px;
+     font-family: 'Oswald', sans-serif;
+}
+
+a {
+     color: #ffdddd;
+     text-decoration: none;
+}
+
+ul {
+     list-style: none;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* Navigation  */ 
+.nav-main {
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+  
+}
+
+.nav-brand {
+     width: 50px;
+}
+
+/* NAV LEFT */
+
+.nav-main ul {
+      display: flex;
+}
+
+.nav-main ul li {
+     padding: 10px; 
+}
+
+.nav-main ul li a {
+padding: 4px;
+
+}
+
+.nav-main ul li a:hover {
+    border-bottom: 3px solid #ffffff; 
+
+}
+
+.nav-main ul.nav-menu {
+     flex: 1;
+     margin-left: 20px;
+}
+
+/* SHOWCASE*/
+
+hr {
+    margin: 10px 0px;
+}
+
+.showcase { 
+    width: 100%;
+    height: 400px;
+    background: url('/img/showcase_rabbit.jpg');
+    padding-bottom: 120px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #262626;
+    color: #ffffff;
+    font-size: 15px;
+    border: 1px solid #ffffff;
+    margin: 10px 0px;
+}
+
+.btn:hover {
+    opacity: .7;
+}
+
+.showcase h2,
+.showcase hp {
+      margin-bottom: 10px;
+}
+
+
+
+/* News Cards*/
+
+.news-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 10px 0;
+}
+
+.news-cards img {
+    width: 100%;
+    height: 180px;
+}
+
+.news-cards h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+
+.news-cards a {
+    padding: 10px 0;
+    color: #f2f2f2f2;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+
+
+    animation-name: anime-leer;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+
+}
+
+
+@keyframes anime-leer {
+    from{
+    color: seashell;
+    font-size: 15PX;
+    
+    }    
+    to{
+    color: salmon;
+    font-size: 15PX;
+    
+    }
+    }
+
+
+
+
+
+
+
+
+.news-cards a:hover {
+    text-decoration: underline;
+}
+
+/* CARDS BANNER ONE*/
+
+.cards-banner-one {
+    width: 100%;
+    height: 120px;
+    background: url('./img/banner2.jpg');
+    margin-bottom: 40PX;
+    
+}
+
+.cards-banner-one .content {
+    width: 40%;
+    padding: 2px;
+    color: #ffdddd;
+}
+
+.cards-banner-one p, 
+.cards-banner-one h2 {
+    margin: 2px;
+}
+
+.fotoshercules img {
+display: inline-block;
+height: 200px;
+width: 200px;
+margin: 1px;
+border: 1px solid #ffdddd;
+border-radius: 10%;
+
+}
+
+.actividades img {
+
+    width: 400px;
+    height: 400px;
+    display: flex;
+       
+}
+.actividades p {
+
+    padding: 10px;
+    display: block;
+}
+
+.casita img {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+}
+
+.casita h1 {
+    display: flex;
+    }
+
+.curiosidades li {
+
+    margin: 3px;
+    
+}
+
+.social-menu {
+    margin-left: 50%;
+
+}
+
+.social-menu a {
+    margin: auto;
+    font-size: 50px;
+    animation-name: anime;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes anime {
+from{
+color: salmon;
+font-size: 30PX;
+
+}    
+to{
+color:red;
+font-size: 32PX;
+
+}
+}
+
+
+.social-menu a:hover {
+color: chartreuse;
+
+}
+
+.social-menu-titulo {
+    margin: auto;
+    display: inline-flex;
+    text-align: center;
+}
+
